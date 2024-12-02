@@ -5,6 +5,6 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
-    - run: echo %GITHUB_ENV%
+    - run: echo $env:GITHUB_ENV
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3

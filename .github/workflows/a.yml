@@ -6,5 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - run: echo $env:GITHUB_ENV
+      env:
+        envnameeee: fwevalvalvalew
     - name: Setup tmate session
       uses: mxschmitt/action-tmate@v3
